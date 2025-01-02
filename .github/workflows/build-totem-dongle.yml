@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build TOTEM with dongle'
+name: '1 - Build TOTEM with dongle'
 on: workflow_dispatch
 jobs:
   build:
@@ -10,3 +10,4 @@ jobs:
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["totem_dongle","totem_left","totem_right"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=y"]'
