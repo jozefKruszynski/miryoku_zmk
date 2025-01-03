@@ -10,3 +10,4 @@ jobs:
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["totem_dongle","totem_left","totem_right"]'
+      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
